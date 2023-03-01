@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: sans-serif;
+    background: linear-gradient(180deg, rgb(32, 32, 88),white);
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 900px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.counter-div {
+    width: 40rem;
+    border: 1px solid grey;
+    padding: 1rem;
+    background-color: rgb(60, 60, 119);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.counter-div *{
+margin-bottom: 2rem;
+}
+.count{
+    font-size: 4rem;
+}
+.buttons button{
+    padding: 1rem;
+    height: 35px;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+button.subtract{
+    background-color: orangered;
+}
+button.Reset{
+    background-color: white;
+    color: black;
+}
+button.add{
+    background-color: green;
+}
+.new{
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+ 
