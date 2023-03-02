@@ -1,28 +1,21 @@
- const count = document.querySelector(".count")
- const resetCount = document.querySelector(".Reset")
- const sub = document.querySelector(".subtract")
- const add = document.querySelector(".add")
+ const number = document.querySelector(".number");
+ const btn = document.querySelector(".generate");
 
- add.addEventListener("click", () => {
-    count.innerHTML++;
-    setColor ()
- });
- sub.addEventListener("click", () => {
-    count.innerHTML--;
-    setColor ()
- });
- resetCount.addEventListener("click", () => {
-    count.innerHTML = 0;
-    setColor ()
- });
+const generateNumber = () => {
+    //Generate number btw 1 and 10
+    const randomNumber = Math.floor(Math.random() * 10 + 1);
+    number.innerHTML = randomNumber;
 
- function setColor (){
-    if (count.innerHTML > 0){
-        count.style.color = "yellow"
-    } else if (count.innerHTML < 0){
-        count.style.color = "orangered"
-    }else {
-        count.style.color = "white"
-    }
- }
+}
 
+btn.addEventListener("click", generateNumber);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ //const rand = Math.floor(Math.random() * 10 + 1);
+ //console.log(rand);
